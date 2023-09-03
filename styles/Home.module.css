@@ -1,7 +1,5 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
   
   min-height: 100vh;
   padding: 4rem 0;
@@ -17,7 +15,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+ 
   height: 1300px;
 }
 .leftHeader{
@@ -71,8 +69,9 @@
 
 
 .panelInfo{
-  background-color: #5FA59D;
+  background-color: #154C79;
   width: 100%;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -80,6 +79,29 @@
   text-align: center;
   
   
+}
+.purposeImg{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 300px;
+  
+}
+.icon{
+  height: 100%;
+  width: 60%;
+  color:white
+}
+.iconCard{
+  width: 20%;
+  height: 80%;
+  background-color: #5FA59D;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
 }
 .titleWhite{
   background-color: white;
@@ -96,20 +118,8 @@
   text-align: center;
 
 }
-.purposeImg{
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  height: 300px;
-  
-}
-.imgPurpose{
-  height: 100%;
-  width: 60%;
-  
-}
+
+
 
 .whyImgContainer{
   width: 30%;
@@ -118,11 +128,12 @@
   
   
 }
+
 .whyImg{
   position: absolute;
-  width: 30%;
-  height: 100%;
-  left:5%
+  width: 25%;
+  height: 50%;
+  left:15%
 } 
 .whyText{
   display:flex;
@@ -138,15 +149,26 @@
 .whyParagraphe{
   padding-left: 10%;
 }
-
+.whySection{
+  height: 500px;
+}
+.who{
+  height: 1000px;
+}
+.whoSection{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .contraintes{
-  height: 300px;
+  height: 500px;
   width: 100%;
   display:flex;
   flex-direction: column;
-  background-color: #5FA59D;
+  background-color: #154C79;
   align-items: center;
-  margin-top:120px
+  
 
 }
 .restrictions{
@@ -161,8 +183,8 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 200px;
-  height: 220px;
+  width:300px;
+  height: 340px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
@@ -173,8 +195,9 @@
   align-items: center;
   text-align: center;
   font-weight: 600;
+  height: 100%;
   
-  margin-bottom: 100px;
+  
 }
 
 .iconContainer{
@@ -189,4 +212,306 @@
   height: 80px;
   border-radius: 50px;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.storyBoardDisplay{
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+.storyBoardSection{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  height: 800px;
+  width: 100%;
+}
+.carrousel{
+  height: 50%;
+  width: 50%;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: #154C79;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+.testedElement{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 80%;
+  
+
+  
+}
+.testedElementSubject{
+  font-size: 20px;
+  font-weight: bold;
+  color:#154C79
+}
+.testedElementSection {
+  background-color: white;
+
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  height: 50%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+.testedElementCard{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+
+  
+  
+  
+}
+.testedElementTitle{
+  background-color: #5FA59D;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  color:white;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+
+}
+.unChoosedElement{
+  text-decoration: line-through;
+  color: red;
+
+}
+.testedElementChoice{
+  font-size: 14px;
+  width: 50%;
+
+}
+.wireframeSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 1200px;
+  width: 100%;
+}
+.carrouselWireframe{
+  height: 100%;
+  width: 80%;
+}
+.mockUpTitle{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.mockUpDisplay{
+  width: 60%;
+}
+.mockUpCard{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  
+}
+.mockUpImage{
+  height: 600px;
+  width: 600px;
+  margin: 30px;
+}
+.mockUpText{
+  font-size: 20px;
+  width: 100%;
+}
+
+.mockUpSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.sprintText{
+    background-color: white;
+    
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 50%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.sprintTitleElement{
+  
+  text-decoration: underline;
+  color: #154C79;
+  font-weight: bold;
+}
+.userStoryFormat{
+  font-weight: bold;
+  color: #5FA59D;
+}
+.sprintIndividual{
+  margin-bottom: 50px;
+}
+
+.bddCard{
+  background-color: #FFFDFC;
+  
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  height: 50%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.sprintCard{
+  height: 40%;
+  width:40%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 10px;
+  margin:20px;
+}
+.sprintCardSection{
+  height: 1000px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sprintTitle{
+  font-weight: bold;
+  color:#154C79;
+  text-align: center;
+}
+.sprintDifficultés{
+  font-weight:500;
+  text-align: center;
+}
+
+.technologiesCard{
+  height: 40%;
+  width:50%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 10px;
+  margin:20px;
+}
+.technologiesLogoSection{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.composantImage{
+  
+  width: 30%;
+}
+.composantsList{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 1000px;
+  flex-wrap: wrap;
+}
+.composantTitle{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.composantsCard{
+  width: 40%;
+  display: flex;
+  height: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.screenCard{
+  
+  width:40%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 10px;
+  margin:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.screenIndividual{
+  margin-bottom: 10px;
+}
+.screensSection{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.screenExampleSection{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.screenExample{
+  
+  width: 40%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 10px;
+  margin:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.tddSection{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
